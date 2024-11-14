@@ -7,7 +7,7 @@ import {
 	showCursor,
 	writeLine,
 } from "./util.ts";
-import { Colors } from "./deps.ts";
+import { Colors, type WriterSync } from "./deps.ts";
 
 export interface Options {
 	text: string;
@@ -16,7 +16,7 @@ export interface Options {
 	prefixText: string;
 	indent: number;
 	cursor: boolean;
-	writer: Deno.WriterSync;
+	writer: WriterSync;
 }
 type InputOptions = Partial<Options>;
 

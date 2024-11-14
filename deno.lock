@@ -1,34 +1,35 @@
 {
-  "version": "3",
-  "packages": {
-    "specifiers": {
-      "jsr:@std/assert@1.0.3": "jsr:@std/assert@1.0.3",
-      "jsr:@std/assert@^1.0.3": "jsr:@std/assert@1.0.3",
-      "jsr:@std/expect@1.0.1": "jsr:@std/expect@1.0.1",
-      "jsr:@std/fmt@1.0.1": "jsr:@std/fmt@1.0.1",
-      "jsr:@std/internal@^1.0.2": "jsr:@std/internal@1.0.2"
-    },
-    "jsr": {
-      "@std/assert@1.0.3": {
-        "integrity": "b0d03ce1ced880df67132eea140623010d415848df66f6aa5df76507ca7c26d8",
-        "dependencies": [
-          "jsr:@std/internal@^1.0.2"
-        ]
-      },
-      "@std/expect@1.0.1": {
-        "integrity": "44075d9c2cb701ddfc4d5a260da2fb26ba3cfd94c45d3a0359f63cabbf85a058",
-        "dependencies": [
-          "jsr:@std/assert@^1.0.3",
-          "jsr:@std/internal@^1.0.2"
-        ]
-      },
-      "@std/fmt@1.0.1": {
-        "integrity": "ef76c37faa7720faa8c20fd8cc74583f9b1e356dfd630c8714baa716a45856ab"
-      },
-      "@std/internal@1.0.2": {
-        "integrity": "f4cabe2021352e8bfc24e6569700df87bf070914fc38d4b23eddd20108ac4495"
-      }
-    }
+  "version": "4",
+  "specifiers": {
+    "jsr:@std/assert@1.0.3": "1.0.3",
+    "jsr:@std/assert@^1.0.3": "1.0.3",
+    "jsr:@std/expect@1.0.1": "1.0.1",
+    "jsr:@std/fmt@1.0.1": "1.0.1",
+    "jsr:@std/internal@^1.0.2": "1.0.2",
+    "jsr:@std/io@0.225.0": "0.225.0"
   },
-  "remote": {}
+  "jsr": {
+    "@std/assert@1.0.3": {
+      "integrity": "b0d03ce1ced880df67132eea140623010d415848df66f6aa5df76507ca7c26d8",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/expect@1.0.1": {
+      "integrity": "44075d9c2cb701ddfc4d5a260da2fb26ba3cfd94c45d3a0359f63cabbf85a058",
+      "dependencies": [
+        "jsr:@std/assert@^1.0.3",
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/fmt@1.0.1": {
+      "integrity": "ef76c37faa7720faa8c20fd8cc74583f9b1e356dfd630c8714baa716a45856ab"
+    },
+    "@std/internal@1.0.2": {
+      "integrity": "f4cabe2021352e8bfc24e6569700df87bf070914fc38d4b23eddd20108ac4495"
+    },
+    "@std/io@0.225.0": {
+      "integrity": "c1db7c5e5a231629b32d64b9a53139445b2ca640d828c26bf23e1c55f8c079b3"
+    }
+  }
 }
